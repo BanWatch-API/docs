@@ -3,6 +3,8 @@ name: Repo Sync
 on:
   schedule: 
   - cron: "*/30 */2 * * *" # every 15 minutes. set to whatever interval you like
+  # Allows for manual triggers if this works.
+  workflow_dispatch:
 
 jobs:
   repo-sync:
